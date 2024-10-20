@@ -1,1 +1,1 @@
-{"version":3,"file":"1-gallery.js","sources":["../src/js/1-gallery.js"],"sourcesContent":["console.log('Gallery');\n"],"names":[],"mappings":"wFAAA,QAAQ,IAAI,SAAS"}
+{"version":3,"file":"1-gallery.js","sources":["../src/js/1-gallery.js"],"sourcesContent":["import SimpleLightbox from \"simplelightbox\";\nimport \"simplelightbox/dist/simple-lightbox.min.css\";\n\nconst gallery = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });"],"names":["SimpleLightbox"],"mappings":"wIAGgB,IAAIA,EAAe,aAAc,CAAE,aAAc,MAAO,aAAc,GAAK,CAAA"}
