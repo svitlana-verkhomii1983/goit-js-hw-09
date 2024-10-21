@@ -10,13 +10,15 @@ body {
 
 .feedback-form {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-direction: column;
     gap: 16px;
     border-radius: 8px;
     padding: 24px;
     background: #fff;
+    width: 408px;
+    height: 315px;
 }
 
 .input-group {
@@ -24,8 +26,11 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 16px;
-    width: 408px;
+    margin-left: 15px;
+    gap: 8px;
+    width: 360px;
+    height: 192px;
+
 }
 
 .input-field {
@@ -33,7 +38,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: 360px;
-    gap: 8px;
+    height: 80px;
 }
 
 .input-field:nth-child(1) {
@@ -52,6 +57,17 @@ body {
     color: #2e2f42;
 }
 
+.input-field input {
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    line-height: inherit;
+}
+
 .input-field input,
 .input-field textarea {
     width: 100%;
@@ -60,10 +76,14 @@ body {
     margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
 }
 
 .input-field input:focus::placeholder {
+    font-family: "Montserrat", sans-serif;
     color: transparent;
+    left: 12px;
+    
 }
 
 .input-field input:focus::before,
@@ -73,7 +93,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
     left: 12px;
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -87,7 +106,8 @@ button {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 10px;
+    margin-left: 15px;
+    margin-top: 70px;
     border-radius: 8px;
     padding: 8px 16px;
     width: 95px;
@@ -96,11 +116,11 @@ button {
     border: none;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
 }
 
 button:hover {
